@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Signal Hill Park</title>
+
+		<!--put your external stylesheet links here-->
+        <link rel="stylesheet" href="css/leaflet.css">
+		<link rel="stylesheet" href="css/easy-button.css">
+        <link rel="stylesheet" href="css/L.Control.Sidebar.css">
+        <link rel="stylesheet" href="css/MarkerCluster.css">
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css">
+        <link rel="stylesheet" href="css/L.Control.Marker.css">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/leaflet-search.css">
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+     <!--   <link rel="stylesheet" href="css/L.Control.Locate.mapbox.scss">-->
+        <link rel="stylesheet" href="css/L.Control.Locate.css">
+        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@[VERSION]/dist/L.Control.Locate.min.css" />-->
+        <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.15/themes/css/cartodb.css" />
+        <link rel="stylesheet" href="css/leaflet.awesome-markers.css">
+
+
+	</head>
+
+	<body>
+    <!-- Trigger/Open The Modal -->
+
+<!-- this keeps displaying behind map -->
+    <!-- The Modal -->
+    <div id="mapid"></div>
+    <div id="panel"></div>
+    <script type="text/javascript" src="js/leaflet.js"></script>
+    <script src="js/leaflet.ajax.min.js"></script>
+    <script src="js/leaflet-search.js"></script>
+    <script type="text/javascript" src="js/jquery-3.4.1.js"></script> 
+    <script src="js/jquery-ui.min.js"></script>
+    <!-- <script type="text/javascript" src="js/leaflet.markercluster-src.js"></script>
+    <script type="text/javascript" src="js/leaflet.markercluster.js"></script> -->
+    <script src="js/L.Control.Sidebar.js"></script>
+    <script src="js/easy-button.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+   <!-- <script src="https://libs.cartocdn.com/carto.js/v4.2.0/carto.min.js"></script>-->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.15/cartodb.js"></script>
+    <script src="js/L.Control.Locate.js"></script>
+    <script src="js/L.Control.Marker.js"></script>
+    <script src="js/leaflet.awesome-markers.js"></script>
+    <script type="text/javascript" src="http://maps.stamen.com/js/tile.stamen.js?v1.3.0"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/leaflet.locatecontrol@[VERSION]/dist/L.Control.Locate.min.js" charset="utf-8"></script>
+-->
+
+    <div id="search"></div>
+
+
+
+
+    <!--need to keep, if removed the modal wont work-->
+    <div id="sidebar" class="text-center col-md-12">
+        <div id="commentModal">
+
+        </div>
+            <!--option to show the same info as modal pop up-->
+            <!-- <p>The <strong>show</strong> method shows the modal and the <strong>hide</strong> method hides the modal.</p>-->
+            <br>
+            <h4>Explore Signal Hill Park</h4>
+
+            <div id="search-container" class="searchbox"></div>
+            <br>
+            <div id = "project" class ="col-xs-12">
+                <div id = "divProjLabel" class="text-center col-xs-12">
+                    <br>
+                    <br>
+                </div>
+                <div id = "info">
+                    <a href="https://www.manassasparkcommunitycenter.com/parks/signal-hill-park/" target="_blank">
+                        <img src="images/parkhome.PNG" width="300" height="300"></a>
+                </div>
+                <div id="main">
+
+                <div id = "review"></div>
+                <!-- Special version of Bootstrap that only affects content wrapped in .bootstrap-iso -->
+                <br>
+                <h4>Share your Experience</h4>
+                <link rel="stylesheet" href="https://formden.com/static/cdn/bootstrap-iso.css" />
+
+                <!-- Inline CSS based on choices in "Settings" tab -->
+                <style>.bootstrap-iso .formden_header h2, .bootstrap-iso .formden_header p, .bootstrap-iso form{font-family: Arial, Helvetica, sans-serif; color: black}.bootstrap-iso form button, .bootstrap-iso form button:hover{color: white !important;} .asteriskField{color: red;}</style>
+
+                <!-- HTML Form (wrapped in a .bootstrap-iso div) -->
+                <div class="bootstrap-iso">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-xs-12">
+                                <form method="post" id="comment-form">
+                                    <div class="form-group ">
+                                        <label class="control-label " for="name">
+                                            Name
+                                        </label>
+                                        <input class="form-control" id="name" name="name" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="message">
+                                            Review
+                                        </label>
+                                        <textarea class="form-control" cols="40" id="message" name="message" placeholder="Leave a comment for the Park" rows="2"></textarea>
+
+                                    </div>
+                                    <div class="form-group ">
+                                        <label class="control-label " for="date">
+                                            Date
+                                        </label>
+                                        <input class="form-control" id="date" name="date" placeholder="YYYY/MM/DD" type="date"/>
+                                    </div>
+
+                                    <div class="form-group ">
+                                        <label class="control-label " for="ParkName">
+                                            Park Name
+                                        </label>
+                                        <input class="form-control" id="ParkName" name="ParkName" value="Signal Hill Park" type="text"/>
+                                    </div>
+                                    <div class="form-group ">
+                                        <div class="row">
+                                            <div class="col-xl-6">
+                                                <label class="control-label " for="long">
+                                                    Longitude
+                                                </label>
+                                                <input class="form-control" id="long" name="long" type="number" step=".001"/>
+                                            </div>
+                                            <div class="col-xl-6">
+                                                <label class="control-label " for="lat">
+                                                    Latitude
+                                                </label>
+                                                <input class="form-control" id="lat" name="lat" type="number" step=".001"/>
+
+                                            </div>
+                                            <div class="col-xl-10">
+                                            <h5>       * Click on map to populate location</h5>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="form-group">
+                                        <div>
+                                            <button class="btn btn-primary " name="submit" type="submit">
+                                                Submit Review
+                                            </button>
+
+                                            <button type="button" class="btn btn-primary" onclick="getreview()">
+                                                Read Reviews
+                                            </button>
+
+
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                <div id="comment-content">
+
+                </div>
+
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                    <div class="modal-dialog">
+
+                        <!-- Modal content-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Signal Hill Park</h4>
+                            </div>
+                            <div class="modal-body">
+                                <p>This interactive map displays recreational activities available at <a href="https://www.manassasparkcommunitycenter.com/parks/signal-hill-park/" target="_blank">Signal Hill Park, Manassas Park Virginia</a>
+                                <p><strong>Search</strong>: To search recreational site locations open the side panel by clicking on the arrow in the upper left hand corner. </p>
+                                <p><strong>Submit and Read Reviews</strong>: Located in the sidebar. </p>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                </div>
+
+
+
+    <script>
+        $(document).ready(function(){
+            // Show the Modal on load
+            $("#myModal").modal("show");
+
+            // Hide the Modal
+            $("#myBtn").click(function(){
+                $("#myModal").modal("hide");
+            });
+        });
+    </script>
+    </div>
+
+     <script type="text/javascript" src="js/main_15july.js"></script>
+
+
+	</body>
+</html>

@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44400229062886,38.755234246246665]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Soccer Field","Note":"For League Use","Location":"Soccer Field 1"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44354526884203,38.754274500494326]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Soccer Field","Note":"For League Use","Location":"Soccer Field 2"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44279879992354,38.75354326563539]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Soccer Field","Note":"For League Use","Location":"Soccer Field 3"}}
+]}

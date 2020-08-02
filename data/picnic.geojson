@@ -1,0 +1,6 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43903598721198,38.75529518248491]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 1"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43882271037813,38.755630331795246]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 2"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43859419948471,38.756133055760756]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 3"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.4413206676247,38.754945913557066]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 4"}}
+]}

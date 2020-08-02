@@ -1,0 +1,18 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44081837218062,38.75450301138774]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Waterpark","Note":"Open Mon-Sun 11am-7pm","Location":"Signal Bay Waterpark"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44002620108344,38.751791348785886]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Walking Trail","Note":"Open","Location":"Walking Trail 1"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44145820268217,38.75314718008681]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Basketball Courts","Note":"Open","Location":"Basketball Courts"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43903598721198,38.75529518248491]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 1"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43882271037813,38.755630331795246]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 2"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43859419948471,38.756133055760756]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 3"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43915785968848,38.75636156665417]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Walking Trail","Note":"Open","Location":"Walking Trail 2"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44362143913983,38.75601118328427]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Walking Trail","Note":"Open","Location":"Walking Trail 3"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44400229062886,38.755234246246665]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Soccer Field","Note":"For League Use","Location":"Soccer Field 1"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44354526884203,38.754274500494326]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Soccer Field","Note":"For League Use","Location":"Soccer Field 2"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44279879992354,38.75354326563539]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Soccer Field","Note":"For League Use","Location":"Soccer Field 3"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43970628583267,38.75287296701472]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Football Field","Note":"For League Use","Location":"Football Field"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44083360624018,38.755645565854806]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Baseball Field","Note":"For League Use","Location":"Baseball Field"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44124510711838,38.75507342191149]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Restrooms","Note":"open 8am-7pm","Location":"Restrooms"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.4413206676247,38.754945913557066]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Picnic Area","Note":"Reservation Required","Location":"Picnic Area 4"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44158011181969,38.75444296399326]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Playground","Note":"Open","Location":"Playground"}}
+]}

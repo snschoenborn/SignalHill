@@ -1,0 +1,5 @@
+{"type":"FeatureCollection", "features": [
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44002620108344,38.751791348785886]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Walking Trail","Note":"","Location":"Walking Trail 1"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.43915785968848,38.75636156665417]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Walking Trail","Note":"","Location":"Walking Trail 2"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[-77.44362143913983,38.75601118328427]},"properties":{"Park_Name":"Signal Hill Park","Activity":"Walking Trail","Note":"","Location":"Walking Trail 3"}}
+]}
